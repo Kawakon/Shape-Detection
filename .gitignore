@@ -8,4 +8,6 @@
 # ignore project files
 *.vcxproj*
 *.sln
+webcam_pic*
+webcam_vid*
 

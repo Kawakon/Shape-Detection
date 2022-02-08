@@ -10,8 +10,8 @@
 using namespace cv;
 using namespace std;
 
-string videoFName = "C:/Users/Kawakon/Documents/Projects/OpenCV/cool_pics/webcam_vid.mp4";
-string imgFName = "C:/Users/Kawakon/Documents/Projects/OpenCV/cool_pics/webcam_pic.jpg";
+string videoFName = "./webcam_vid.mp4";
+string imgFName = "./webcam_pic.jpg";
 
 void myCallBackFunc(int event, int x, int y, int flags, void* userdata) {
     if (event == EVENT_RBUTTONDOWN) {
@@ -120,7 +120,6 @@ void capture(bool precision) {
 
             // calculating areas of contoured shapes
             double area = fabs(contourArea(result));
-            cout << area << endl;
 
             // shape detection of squares and rectangles
             if (precision) {
@@ -137,7 +136,6 @@ void capture(bool precision) {
                     line(invertedFrame, result[1], result[2], Scalar(0, 255, 0), 7);
                     line(invertedFrame, result[2], result[3], Scalar(0, 255, 0), 7);
                     line(invertedFrame, result[3], result[0], Scalar(0, 255, 0), 7);
-                    cout << dRect << " and " << dSquare << endl;
                 }
             }
             else {
