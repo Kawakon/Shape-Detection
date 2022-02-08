@@ -13,7 +13,7 @@ polygon in question to find the 'distance' between the shapes. The closer the di
 If a four-sided polygon is detected, a green outline is drawn on the contours of the shape in the video. The program also displays a window where
 binarized version (black or white pixels only) of the current video frame are displayed. An example of the program output is shown below:
 
-
+![shape_detection](https://user-images.githubusercontent.com/43174428/152913239-8a43ddae-21be-4918-a4ef-a09ed0c1e898.png)
 
 Pressing the ESC key during execution will end the program and pressing the 's' key will save current frame of the video as an image to your current
 directory.
