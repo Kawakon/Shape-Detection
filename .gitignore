@@ -1,0 +1,11 @@
+# ignore rules for shape detection project
+
+# ignore folders
+/Debug
+/x64
+/.vs
+
+# ignore project files
+*.vcxproj*
+*.sln
+
